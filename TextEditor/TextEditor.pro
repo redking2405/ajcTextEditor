@@ -11,10 +11,12 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    mytextedit.cpp \
     newtab.cpp
 
 HEADERS += \
     mainwindow.h \
+    mytextedit.h \
     newtab.h
 
 FORMS += \

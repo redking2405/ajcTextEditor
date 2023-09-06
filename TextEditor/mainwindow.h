@@ -23,6 +23,8 @@ public:
     ~MainWindow();
 
     QVector<newtab*> alltabptr;
+    static MainWindow* GetMainWindow();
+    void UpdateTabName(newtab* currentTab);
 public slots:
     void CloseCurrentTab(int i);
 
@@ -34,6 +36,8 @@ private:
     void OpenFile();
     void ReadFile(QString filename);
     void AddTab(QString name);
+    void SaveTab(int i);
+    static MainWindow* mainptr;
 
 };
 #endif // MAINWINDOW_H
